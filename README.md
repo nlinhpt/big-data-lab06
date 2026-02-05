@@ -47,6 +47,10 @@
 
 ``` docker exec -it spark-master /opt/spark/bin/spark-submit --master spark://spark-master:7077 /opt/spark-apps/db_analysis.py > results_lab6.txt ```
 
+## Stop and Clean Up
+
+``` docker-compose -f db-integration.compose.yml down ```
+
 ## Output File: results_lab6.txt
 After running the command above, a file named results_lab6.txt will be generated in your project folder. It contains:
 
