@@ -1,0 +1,170 @@
+WARNING: Using incubator modules: jdk.incubator.vector
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+26/02/05 10:17:36 INFO SparkContext: Running Spark version 4.0.1
+26/02/05 10:17:36 INFO SparkContext: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+26/02/05 10:17:36 INFO SparkContext: Java version 21.0.8
+26/02/05 10:17:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/02/05 10:17:36 INFO ResourceUtils: ==============================================================
+26/02/05 10:17:36 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/02/05 10:17:36 INFO ResourceUtils: ==============================================================
+26/02/05 10:17:36 INFO SparkContext: Submitted application: Pagila Analysis - Lesson 6
+26/02/05 10:17:37 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/02/05 10:17:37 INFO ResourceProfile: Limiting resource is cpu
+26/02/05 10:17:37 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/02/05 10:17:37 INFO SecurityManager: Changing view acls to: spark
+26/02/05 10:17:37 INFO SecurityManager: Changing modify acls to: spark
+26/02/05 10:17:37 INFO SecurityManager: Changing view acls groups to: spark
+26/02/05 10:17:37 INFO SecurityManager: Changing modify acls groups to: spark
+26/02/05 10:17:37 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY; RPC SSL disabled
+26/02/05 10:17:37 INFO Utils: Successfully started service 'sparkDriver' on port 46803.
+26/02/05 10:17:37 INFO SparkEnv: Registering MapOutputTracker
+26/02/05 10:17:37 INFO SparkEnv: Registering BlockManagerMaster
+26/02/05 10:17:38 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/02/05 10:17:38 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/02/05 10:17:38 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/02/05 10:17:38 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c3d65e7b-2a84-4987-a9f6-de901cc1c5c7
+26/02/05 10:17:38 INFO SparkEnv: Registering OutputCommitCoordinator
+26/02/05 10:17:38 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/02/05 10:17:38 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/02/05 10:17:38 INFO SecurityManager: Changing view acls to: spark
+26/02/05 10:17:38 INFO SecurityManager: Changing modify acls to: spark
+26/02/05 10:17:38 INFO SecurityManager: Changing view acls groups to: spark
+26/02/05 10:17:38 INFO SecurityManager: Changing modify acls groups to: spark
+26/02/05 10:17:38 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY; RPC SSL disabled
+26/02/05 10:17:39 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+26/02/05 10:17:39 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.3:7077 after 132 ms (0 ms spent in bootstraps)
+26/02/05 10:17:39 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260205101739-0002
+26/02/05 10:17:39 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260205101739-0002/0 on worker-20260205091902-172.18.0.7-38645 (172.18.0.7:38645) with 2 core(s)
+26/02/05 10:17:39 INFO StandaloneSchedulerBackend: Granted executor ID app-20260205101739-0002/0 on hostPort 172.18.0.7:38645 with 2 core(s), 1024.0 MiB RAM
+26/02/05 10:17:39 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260205101739-0002/1 on worker-20260205091902-172.18.0.6-46789 (172.18.0.6:46789) with 2 core(s)
+26/02/05 10:17:39 INFO StandaloneSchedulerBackend: Granted executor ID app-20260205101739-0002/1 on hostPort 172.18.0.6:46789 with 2 core(s), 1024.0 MiB RAM
+26/02/05 10:17:39 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 43601.
+26/02/05 10:17:39 INFO NettyBlockTransferService: Server created on spark-master:43601
+26/02/05 10:17:39 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/02/05 10:17:39 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260205101739-0002/0 is now RUNNING
+26/02/05 10:17:39 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260205101739-0002/1 is now RUNNING
+26/02/05 10:17:39 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, spark-master, 43601, None)
+26/02/05 10:17:39 INFO BlockManagerMasterEndpoint: Registering block manager spark-master:43601 with 579.2 MiB RAM, BlockManagerId(driver, spark-master, 43601, None)
+26/02/05 10:17:39 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, spark-master, 43601, None)
+26/02/05 10:17:39 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, spark-master, 43601, None)
+26/02/05 10:17:41 INFO RollingEventLogFilesWriter: Logging events to file:/opt/spark/spark-events/eventlog_v2_app-20260205101739-0002/events_1_app-20260205101739-0002.zstd
+26/02/05 10:17:43 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+^[OB^[OB26/02/05 10:17:52 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.7:34670) with ID 0, ResourceProfileId 0
+26/02/05 10:17:52 INFO StandaloneSchedulerBackend$StandaloneDriverEndpoint: Registered executor NettyRpcEndpointRef(spark-client://Executor) (172.18.0.6:47522) with ID 1, ResourceProfileId 0
+26/02/05 10:17:52 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.6:35321 with 579.2 MiB RAM, BlockManagerId(1, 172.18.0.6, 35321, None)
+26/02/05 10:17:52 INFO BlockManagerMasterEndpoint: Registering block manager 172.18.0.7:37297 with 579.2 MiB RAM, BlockManagerId(0, 172.18.0.7, 37297, None)
+
+================ QUESTION 1 =================
+Using Spark, compute monthly revenue by film category.
+
+We join payment → rental → inventory → film → film_category → category. Revenue is computed using SUM(amount) and grouped by month and category.
+
++-------+-----------+---------------+
+|month  |category   |monthly_revenue|
++-------+-----------+---------------+
+|2022-01|Sci-Fi     |248.41         |
+|2022-01|Action     |247.42         |
+|2022-01|New        |237.46         |
+|2022-01|Sports     |235.48         |
+|2022-01|Comedy     |231.56         |
+|2022-01|Drama      |218.55         |
+|2022-01|Foreign    |215.47         |
+|2022-01|Documentary|195.51         |
+|2022-01|Family     |192.52         |
+|2022-01|Classics   |174.56         |
+|2022-01|Animation  |164.54         |
+|2022-01|Travel     |155.67         |
+|2022-01|Horror     |151.67         |
+|2022-01|Games      |146.68         |
+|2022-01|Music      |143.62         |
+|2022-01|Children   |135.66         |
+|2022-02|Sports     |844.16         |
+|2022-02|Games      |711.37         |
+|2022-02|Family     |706.13         |
+|2022-02|Drama      |697.31         |
++-------+-----------+---------------+
+only showing top 20 rows
+
+================ QUESTION 2 =================
+Define customer lifetime value (CLV) using Spark.
+
+CLV is defined as the total monetary value contributed by a customer over time. It is calculated by summing all payment amounts per customer.
+
++-----------+------+
+|customer_id|clv   |
++-----------+------+
+|526        |221.55|
+|148        |216.54|
+|144        |195.58|
+|137        |194.61|
+|178        |194.61|
+|459        |186.62|
+|469        |177.60|
+|468        |175.61|
+|236        |175.58|
+|181        |174.66|
+|176        |173.63|
+|259        |170.67|
+|50         |169.65|
+|522        |167.67|
+|410        |167.62|
+|403        |166.65|
+|295        |162.62|
+|209        |161.68|
+|373        |161.65|
+|470        |160.68|
++-----------+------+
+only showing top 20 rows
+
+================ QUESTION 3 =================
+Identify the top 1% of customers generating 80% of revenue.
+
+Customers are sorted by CLV in descending order. Using a window function, cumulative revenue is computed and customers contributing up to 80% of total revenue are selected.
+
++-----------+------+------------------+-------------+
+|customer_id|clv   |cumulative_revenue|revenue_ratio|
++-----------+------+------------------+-------------+
+|526        |221.55|221.55            |0.0032862870 |
+|148        |216.54|438.09            |0.0064982598 |
+|144        |195.58|633.67            |0.0093993296 |
+|137        |194.61|828.28            |0.0122860112 |
+|178        |194.61|1022.89           |0.0151726929 |
+|459        |186.62|1209.51           |0.0179408575 |
+|469        |177.60|1387.11           |0.0205752270 |
+|468        |175.61|1562.72           |0.0231800786 |
+|236        |175.58|1738.30           |0.0257844851 |
+|181        |174.66|1912.96           |0.0283752452 |
+|176        |173.63|2086.59           |0.0309507271 |
+|259        |170.67|2257.26           |0.0334823028 |
+|50         |169.65|2426.91           |0.0359987487 |
+|522        |167.67|2594.58           |0.0384858249 |
+|410        |167.62|2762.20           |0.0409721595 |
+|403        |166.65|2928.85           |0.0434441059 |
+|295        |162.62|3091.47           |0.0458562747 |
+|209        |161.68|3253.15           |0.0482545003 |
+|373        |161.65|3414.80           |0.0506522809 |
+|470        |160.68|3575.48           |0.0530356733 |
++-----------+------+------------------+-------------+
+only showing top 20 rows
+
+================ QUESTION 4 =================
+Propose a partitioning strategy for the payment table.
+
+• Partition by date (year, month): BEST choice. Optimizes time-based analytics and incremental data loads.
+• Partition by store: Useful for store-level reporting but may lead to skew.
+• Partition by customer: NOT recommended due to high cardinality and many small files.
+
+Payment table written as Parquet partitioned by year and month.
+
+
+================ QUESTION 5 =================
+Optimizing slow joins at scale.
+
+• Join order optimization: Join large fact tables first, broadcast small dimension tables.
+• Indexing strategies: Create indexes on foreign keys in PostgreSQL (rental_id, inventory_id, film_id).
+• Caching / Materialized views: Cache small dimensions in Spark and precompute fact-to-dimension joins when reused.
+
+Optimized join using broadcast completed successfully.
+
+========== END OF ANALYSIS ==========
+
